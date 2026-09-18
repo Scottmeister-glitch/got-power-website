@@ -1,0 +1,1 @@
+const m=document.querySelector(".menu"),n=document.querySelector("nav");m.onclick=()=>n.classList.toggle("open");document.querySelectorAll("nav a").forEach(a=>a.onclick=()=>n.classList.remove("open"));document.querySelector("#form").onsubmit=e=>{e.preventDefault();document.querySelector("#status").textContent="Thanks. Your service request has been received.";};
