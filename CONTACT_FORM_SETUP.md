@@ -11,6 +11,6 @@ Before the form can deliver customer requests:
 
 Do not consider the form operational until activation and the end-to-end delivery test in step 3 are complete. FormSubmit may expose additional configuration in its activation flow; no FormSubmit account or paid plan is normally required, but the destination mailbox must be accessible for verification.
 
-The hidden `_honey` field provides basic bot protection without adding a CAPTCHA or other step for legitimate customers. FormSubmit processes and emails the submitted contact details, so the site owner should review FormSubmit's terms and privacy policy before activation.
+FormSubmit's built-in CAPTCHA and the invisible `_honey` field provide complementary bot protection. The honeypot is hidden from customers and removed from the keyboard navigation order. FormSubmit processes and emails the submitted contact details, so the site owner should review FormSubmit's terms and privacy policy before activation.
 
 The form intentionally uses a normal browser POST to its `https://formsubmit.co/meisterfitness@gmail.com` action. Do not intercept the first submission with the FormSubmit AJAX endpoint: the standard endpoint is required to start FormSubmit's email-confirmation flow for a new destination.
