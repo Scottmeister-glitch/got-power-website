@@ -15,3 +15,6 @@
 
 /* Blend the home and business artwork into the existing hero background. */
 .heroArtwork{display:flex;align-items:center;justify-content:center;min-width:0;min-height:0;padding:24px 0;isolation:isolate}.heroArtwork img{display:block;width:100%;max-width:580px;height:auto;mix-blend-mode:screen;-webkit-mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent),linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent),linear-gradient(to bottom,transparent,#000 8%,#000 92%,transparent);mask-composite:intersect}@media(max-width:850px){.heroArtwork{padding:0 0 30px}.heroArtwork img{max-width:430px}}
+
+/* Let the artwork blend with the hero itself, rather than an isolated layer. */
+.heroArtwork{isolation:auto}.heroArtwork img{-webkit-mask-image:radial-gradient(ellipse at center,#000 48%,transparent 73%);mask-image:radial-gradient(ellipse at center,#000 48%,transparent 73%);-webkit-mask-composite:source-over;mask-composite:add}@media(min-width:851px){.heroArtwork img{width:120%;max-width:740px;flex-shrink:0}}
