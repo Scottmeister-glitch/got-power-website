@@ -5,3 +5,7 @@
 
 /* Scale the owner photo with desktop screen width. */
 @media(min-width:851px){.why{padding-left:6%;padding-right:6%;grid-template-columns:clamp(380px,30vw,640px) minmax(0,1fr);gap:clamp(35px,4vw,70px)}.why .ownerPhoto{max-width:none}}
+
+/* Give the desktop hero text room to breathe. */
+@media(min-width:851px){.hero{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);column-gap:40px}.heroCopy{max-width:960px;padding:60px 0}.hero h1{font-size:clamp(48px,4vw,80px);line-height:1.05;letter-spacing:-2px}.hero .actions{flex-wrap:wrap}}
+@media(min-width:851px) and (max-width:1100px){.hero{column-gap:20px}.heroVisual .house{transform:scale(.8);transform-origin:bottom right}.heroBadge{right:0;padding:16px 20px}.heroBadge strong{font-size:23px}}
