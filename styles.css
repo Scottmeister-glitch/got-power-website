@@ -2,3 +2,6 @@
 
 /* Expand service cards on desktop while preserving the mobile layout. */
 @media(min-width:851px){#services .cards{max-width:none}#services .servicePhotos{height:auto;aspect-ratio:16/7}}
+
+/* Scale the owner photo with desktop screen width. */
+@media(min-width:851px){.why{padding-left:6%;padding-right:6%;grid-template-columns:clamp(380px,30vw,640px) minmax(0,1fr);gap:clamp(35px,4vw,70px)}.why .ownerPhoto{max-width:none}}
